@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* header */
+/* input?
+   rotate?
+*/
+
+.back-img {
+    aspect-ratio: 7/4.5;
+    background-image: url("./images/parasite_header.jpg.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.header-objects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(51, 45, 45));
+    padding: 0.7rem;
+}
+
+.first-block {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header-objects h1 {
+    margin: 0.5rem 2.5rem 0.5rem 2rem;
+    font-size: 2em;
+    color: rgb(242, 23, 26);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.middle-letters {
+    font-size: 0.8em;
+}
+
+.end-letters {
+    font-size: 0.9em;
+}
+
+.nav-topics {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.nav-topics a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-topics a:first-child {
+    font-weight: bold;
+}
+
+.nav-topics a:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 2rem;
+}
+
+.fa-magnifying-glass {
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.fa-bell {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+.nav-icons img {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
+
+.fa-sort-down {
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+/* main */
+
+.main-movie {
+    display: flex;
+    margin: 15rem 0 25rem 2.5rem;
+}
+
+.main-movie-section {
+    width: 100%
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+h2 .c-letter {
+    color: rgb(201, 31, 31);
+    font-size: 3rem;
+}
+
+h2 .movie-word {
+    color: rgb(205, 193, 193);
+    font-weight: 300;
+}
+
+h3 {
+    color: rgb(230, 234, 234);
+    font-family: Georgia;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.movie-details {
+    color: white;
+    font-weight: 200;
+    font-size: 1.3rem;
+    max-width: 30%;
+}
+
+.movie-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-play {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-play-button {
+    display: flex;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    border: 0.3px solid black;
+}
+
+.more-info {
+    color: white;
+    background-color: rgba(170, 166, 166, 0.53);
+    font-size: 2rem;
+    padding: 0.37rem 2rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.fa-volume-low {
+    color: rgba(255, 255, 255, 0.709);
+    font-size: 2rem;
+}
+
+.age {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: white;
+    border-left: 3px solid white;
+    background-color: rgba(128, 128, 128, 0.56);
+    padding: 0.3rem 3rem 0.1rem 0;
+    margin-left: 1rem;
+}
