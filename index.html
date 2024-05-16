@@ -2,6 +2,7 @@
     <head>
         <link href="./index.css" rel="stylesheet"/>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
@@ -15,11 +16,11 @@
                             <h1>C<span class="end-letters">H</span><span class="middle-letters">ILL</span><span class="end-letters">I</span>X</h1>
                             <nav class="nav-topics">
                                 <a href="#">Home</a>
-                                <a href="#">TV Shows</a>
-                                <a href="#">Movies</a>
-                                <a href="#">New & Popular</a>
-                                <a href="#">My List</a>
-                                <a href="#">Browse by Languages</a>
+                                <a href="#Shows">TV Shows</a>
+                                <a href="#MovieS">Movies</a>
+                                <a href="#NewandPopular">New & Popular</a>
+                                <a href="#MyList">My List</a>
+                                <a href="#Language">Browse by Languages</a>
                             </nav>
                         </div>
                         <nav class="nav-icons">
@@ -48,7 +49,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="main-flow">
+                <div class="main-flow" id="Shows">
                     <p>Award Winning American Series</p>
                     <div class="flow-card">
                         <div class="suggestion-card">
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-flow">
+            <div class="main-flow" id="MyList">
                 <p>My List</p>
                 <div class="flow-card">
                     <div class="suggestion-card">
@@ -102,8 +103,8 @@
                     </div>
                 </div>
             </div>
-            <div class="main-flow">
-                <p>New on CHILLIX</p>
+            <div class="main-flow" id="NewandPopular">
+                <p>New and Popular</p>
                 <div class="flow-card">
                     <div class="suggestion-card">
                         <img src="./images/disen.jpeg"/>
@@ -119,8 +120,8 @@
                     </div>
                 </div>
             </div>
-            <div class="main-flow">
-                <p>Spanish-Language</p>
+            <div class="main-flow" id="Language">
+                <p>Spanish</p>
                 <div class="flow-card">
                     <div class="suggestion-card">
                         <img src="./images/elite.webp"/>
@@ -136,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-flow">
+            <div class="main-flow" id="MovieS">
                 <p>Top 10 Movies in Turkey</p>
                 <div class="flow-card">
                     <div class="suggestion-card">
@@ -153,7 +154,6 @@
                     </div>
                 </div>
             </div>
-            
         </section>
     <footer class="last-section">
         <div class="first-logos">
@@ -166,22 +166,30 @@
         </div>
         <div class="second-div">
             <nav class="terms">
-                <a href="#">Audio Description</a>
-                <a href="#">Help Center</a>
-                <a href="#">Gift Cards</a>
-                <a href="#">Media Center</a>
-                <a href="#">Investor Relations</a>
-                <a href="#">Jobs</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy</a>
-                <a href="#">Legal Notices</a>
-                <a href="#">Cookie Preferences</a>
-                <a href="#">Corporate Information</a>
-                <a href="#">Contact Us</a>
+                <div class="texts">
+                <a href="">Audio Description</a>
+                <a href="">Help Center</a>
+                <a href="">Gift Cards</a>
+                </div>
+                <div class="texts">
+                <a href="">Media Center</a>
+                <a href="">Investor Relations</a>
+                <a href="">Jobs</a>
+                </div>
+                <div class="texts">
+                <a href="">Terms of Use</a>
+                <a href="">Privacy</a>
+                <a href="">Legal Notices</a>
+                </div>
+                <div class="texts">
+                <a href="">Cookie Preferences</a>
+                <a href="">Corporate Information</a>
+                <a href="">Contact Us</a>
+                </div>
             </nav>
         </div>
-        <div class="third-div">
-            <button>Service Code</button>
+        <div>
+            <button class="third-div">Service Code</button>
         </div>
         <div class="fourth-div">
             <p>&copy;2024 CHILLIX, Inc</p>
