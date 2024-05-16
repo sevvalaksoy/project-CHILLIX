@@ -3,18 +3,22 @@ body {
     padding: 0;
     font-family: sans-serif;
     font-size: 16px;
+    background-image: linear-gradient(to top, rgb(4, 3, 3), rgba(2, 2, 2, 0.8));
 }
 
 /* header */
 /* input?
    rotate?
+   3d transform?
 */
 
 .back-img {
-    aspect-ratio: 7/4.5;
+    max-height: 1000px;
+    aspect-ratio: 7/4;
     background-image: url("./images/parasite_header.jpg.webp");
     background-size: cover;
     background-position: center;
+    height: fit-content;
 }
 
 header {
@@ -190,4 +194,57 @@ h3 {
     background-color: rgba(128, 128, 128, 0.56);
     padding: 0.3rem 3rem 0.1rem 0;
     margin-left: 1rem;
+}
+
+.movie-suggestions {
+   margin-top: 20%;
+}
+
+.suggestion-card {
+    display: flex;
+    gap: 0.5rem;
+    overflow: auto;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.suggestion-card img {
+    width: 256px;
+    height: 145px;
+    border-radius: 1rem;
+    background-color: black;
+    transition: transform .2s;
+}
+
+.suggestion-card img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.main-flow {
+    margin: -20rem 1.5rem 20rem 2.5rem;
+}
+
+.main-flow p {
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+
+.main-flow p:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.last-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.second-div {
+    width: 25%;
 }
