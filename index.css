@@ -9,17 +9,16 @@ body {
 /* header */
 
 .back-img {
-    max-height: 1000px;
     aspect-ratio: 7/4;
     background-image: url("./images/parasite_header.jpg.webp");
     background-size: cover;
     background-position: center;
-    height: fit-content;
 }
 
 header {
     position: fixed;
     width: 100%;
+    display: inline;
 }
 
 .header-objects {
@@ -109,7 +108,8 @@ header {
 }
 
 .main-movie-section {
-    width: 100%
+    display: inline;
+    width: 100%;
 }
 
 h2 {
@@ -136,6 +136,7 @@ h3 {
 }
 
 .movie-details {
+    width: fit-content;
     color: white;
     font-weight: 200;
     font-size: 1.3rem;
@@ -243,7 +244,8 @@ h3 {
     display: flex;
     flex-direction: column;
     color: white;
-    margin: 0 0 0 20vw
+    width: fit-content;
+    padding-left: 15vw;
 }
 
 .first-logos nav {
@@ -256,9 +258,10 @@ h3 {
 
 .second-div nav {
     display: flex;
-    gap: 10rem;
-    flex-wrap: wrap;
+    gap: 8rem;
+    flex-wrap: nowrap;
 }
+
 
 .terms a {
     text-decoration: none;
@@ -271,6 +274,13 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    flex-wrap: nowrap;
+}
+
+.texts a {
+    display: inline;
+    white-space: nowrap;
+    width: auto;
 }
 
 .third-div {
@@ -288,3 +298,44 @@ h3 {
     color: gray;
 }
 
+@media (max-width: 1000px) {
+   .nav-topics a:first-child {
+        display: none;
+   }
+   .nav-topics a:nth-child(n+4){
+        display: none;
+   }
+   .nav-topics a {
+        font-size: 0.8rem;
+   }
+   .texts {
+        display: none;
+   }
+   h3 {
+        font-size: 2rem;
+   }
+   .header-objects h1 {
+        font-size: 1.5rem;
+        margin-left: 0.3rem;
+   }
+   .main-movie {
+        margin-left: 0;
+   }
+   .main-movie-section {
+        margin-left: 1.4rem;
+   }
+   .movie-details {
+        font-size: 1rem;
+        max-width: 50%;
+   }
+   .more-info {
+        display: none;
+   }
+   .last-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+   }
+}
